@@ -12,11 +12,13 @@ import com.idlefish.flutterboost.containers.BoostFlutterActivity
 object PagerRouter {
     const val FLUTTER_FIRST_PAGE = "sample://first"
     const val FLUTTER_THIRD_PAGE = "sample://third"
+    const val FLUTTER_DEFAULT_PAGE = "sample://default"
 
 
     val pageName: Map<String, String> = mutableMapOf(
         Pair(FLUTTER_FIRST_PAGE,"first"),
-        Pair(FLUTTER_THIRD_PAGE,"third")
+        Pair(FLUTTER_THIRD_PAGE,"third"),
+        Pair(FLUTTER_DEFAULT_PAGE,"default")
 
     )
     const val NATIVE_PAGE_URL = "sample://nativePage"

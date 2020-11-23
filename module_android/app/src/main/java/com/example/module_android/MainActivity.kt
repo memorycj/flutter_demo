@@ -17,4 +17,9 @@ class MainActivity : AppCompatActivity() {
 
         PagerRouter.open(this,PagerRouter.FLUTTER_THIRD_PAGE,null)
     }
+
+    fun openDefaultPage(view: View) {
+
+        PagerRouter.open(this,PagerRouter.FLUTTER_DEFAULT_PAGE,null)
+    }
 }

@@ -24,4 +24,12 @@
         android:onClick="openThirdPage"
         />
 
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="open default FlutterPage"
+        android:onClick="openDefaultPage"
+        />
+
 </LinearLayout>

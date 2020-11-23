@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_boost/flutter_boost.dart';
 
+import 'DefaultPage.dart';
 import 'FirstPage.dart';
 import 'ThirdPage.dart';
 
@@ -27,6 +28,10 @@ class _MyAppState extends State<MyApp> {
         print("demo##third_page");
         return ThirdPage();
       }
+    });
+
+    FlutterBoost.singleton.registerDefaultPageBuilder((pageName, params, uniqueId){
+      return DefaultPage();
     });
     FlutterBoost.singleton.addBoostNavigatorObserver(TestBoostNavigatorObserver());
   }
