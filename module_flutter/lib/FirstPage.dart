@@ -1,6 +1,7 @@
 
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_boost/flutter_boost.dart';
 
 class FirstPage extends StatelessWidget{
   @override
@@ -10,7 +11,18 @@ class FirstPage extends StatelessWidget{
       body: Container(
           color: Colors.white,
           child:Center(
-            child:  Text("FirstPage"),
+            child:  RaisedButton(
+              child: Text("jump native page"),
+              onPressed:() {
+                FlutterBoost.singleton.open("sample://activity_a",exts:{
+                  "data":"hahahahahhahahah"
+                },urlParams: {
+                  "key":"bbb"
+                }
+                );
+              },
+
+            ),
           )
       ),
     );
