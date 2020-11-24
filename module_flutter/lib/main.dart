@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_boost/flutter_boost.dart';
 
+import 'AboutPage.dart';
 import 'DefaultPage.dart';
 import 'FirstPage.dart';
-import 'ThirdPage.dart';
 
 void main() {
   runApp(MyApp());
@@ -24,9 +24,9 @@ class _MyAppState extends State<MyApp> {
         print("demo##fist_page");
         return FirstPage();
       },
-      "third": (String pageName, Map<String, dynamic> params, String _) {
+      "about": (String pageName, Map<String, dynamic> params, String _) {
         print("demo##third_page");
-        return ThirdPage();
+        return AboutPage();
       }
     });
 
